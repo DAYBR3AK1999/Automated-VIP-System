@@ -1,8 +1,9 @@
 # Automated-VIP-System
 This is an Automated VIP System for games supporting SourceBans with SourceMod.
 
-## Title
-**[ANY] VIP Management Plugin (v1.0, 2023-11-09)**
+## Tested on:
+- Counter-Strike: Source
+- Counter-Strike: Global Offensive
 
 ## Description
 This plugin adds users to the VIP group with certain flags in game servers supported by SourceBans to manage VIP status, codes, expiration dates and privileges.

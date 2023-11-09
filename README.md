@@ -31,7 +31,7 @@ It also features an automated system for adding and removing VIPs according to e
 ## Installation Instructions
 1. Configure a SourceBans group with some flags you want to give to VIP users.
 2. Create the table sb_vip_system with columns by running the [SQL File](https://github.com/DAYBR3AK1999/Automated-VIP-System/blob/main/vip_system.sql).
-3. Download the plugin (.smx) or compile the .sp file while you configured the plugin by editing the `.sp or .sql file` to your own liking.
+3. Download the plugin ([.smx](vip.smx) or compile the ([.sp](https://github.com/DAYBR3AK1999/Automated-VIP-System/blob/main/vip.sp)) file while you configured the plugin by editing the `.sp or .sql file` to your own liking.
 4. Place the .smx file in your server's `addons/sourcemod/plugins` directory.
 5. Restart the server.
 

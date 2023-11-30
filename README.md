@@ -76,4 +76,4 @@ Servers looking to provide VIP privileges in a controlled and manageable manner.
 [On my GitHub profile](https://github.com/DAYBR3AK1999/Automated-VIP-System)
 
 ## Web Management System Preview
-[Here (Login = DAYBR3AK1999/Test123 & Thieu/Test123](https://viptest.adrenaline-gaming.net/)
+[Will be added]

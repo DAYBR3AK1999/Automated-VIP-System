@@ -2,6 +2,18 @@
 #include <regex>
 #include <string>
 
+#define PLUGIN_AUTHOR "DAYBR3AK1999"
+#define PLUGIN_VERSION "2.0"
+
+public Plugin:myinfo = 
+{
+	name = "Automated VIP System",
+	author = PLUGIN_AUTHOR,
+	description = "Automated Sourcebans VIP Trial Plugin where commands are used to become VIP.",
+	version = PLUGIN_VERSION,
+	url = "https://forums.alliedmods.net/showthread.php?t=344460"
+};
+
 bool usedViptest[MAXPLAYERS + 1];
 
 native SQL_ReadCallback(Handle:query, const FunctionName[], any:DataTuple = 0);
@@ -209,8 +221,8 @@ public Action vip_code(int client, int arg) {
     }
 
     static int spamblock[MAXPLAYERS+1];
-
     int time = GetTime();
+
     if (time < spamblock[client]) {
         PrintToChat(client, "[SM] Do not spam command!");
         return Plugin_Handled;
@@ -231,7 +243,7 @@ public Action vip_code(int client, int arg) {
         if (DB == null) return Plugin_Handled;
 
         char buffer[300];
-        Format(buffer, sizeof(buffer), "SELECT used FROM sb_vip_system WHERE code = '%s'", vipCode);
+        Format(buffer, sizeof(buffer), "SELECT used, steamid FROM sb_vip_system WHERE code = '%s'", vipCode);
 
         Handle hDataPack = CreateDataPack();
         WritePackCell(hDataPack, client);
@@ -255,10 +267,18 @@ public void vip_code_check_callback(Handle owner, Handle hndl, const char[] erro
     char code[20];
     ReadPackString(hDataPack, code, sizeof(code));
 
+    char clientSteamID[32];
+    GetClientAuthId(client, AuthId_Steam2, clientSteamID, sizeof(clientSteamID));
+
     if (SQL_FetchRow(hndl)) {
         int used = SQL_FetchInt(hndl, 0);
+        char steamID[32];
+        SQL_FetchString(hndl, 1, steamID, sizeof(steamID));
+
         if (used != 0) {
             PrintToChat(client, "[SM] This VIP code has already been claimed.");
+        } else if (strlen(steamID) > 0 && strcmp(steamID, clientSteamID) != 0) {
+            PrintToChat(client, "[SM] This VIP code is not yours to claim.");
         } else {
             activate_vip_code(client, code);
         }
@@ -269,6 +289,7 @@ public void vip_code_check_callback(Handle owner, Handle hndl, const char[] erro
     delete hndl;
     CloseHandle(hDataPack);
 }
+
 
 void activate_vip_code(int client, const char[] code) {
     if (!IsValidClient(client)) return;

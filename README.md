@@ -6,49 +6,74 @@ This is an Automated VIP System for games supporting SourceBans with SourceMod.
 - Counter-Strike: Global Offensive
 
 ## Description
-This plugin adds users to the VIP group with certain flags in game servers supported by SourceBans to manage VIP status, codes, expiration dates and privileges.
-It interacts with a SourceBans database to keep track of who has VIP status, manages VIP tests, and automatically refreshes the administrator's cache if necessary.
-It also features an automated system for adding and removing VIPs according to expiration date, currently set at 1 week, but can be customized once the code has been used by a user or could even be created by a database administrator.
+Version 2.0 introduces a web-based management interface for the VIP system, enhancing the plugin's capabilities with user-friendly administration, role-based access control, and a streamlined VIP management process. This update works seamlessly with the existing SourceMod plugin to manage VIP statuses, codes, and privileges.
 
 ## Feature List
-- Automated VIP code generation with validation and activation system.
-- VIP test function for temporary VIP access or more, depending on what the database administrator does.
-- Automatic refresh of administrator cache when VIP status is updated.
-- Database administrators can manage VIP codes, statuses, expiration dates and more or even add users via SteamID and generate an expiration date with a random code.
-- Automated checking and updating of non-existent, used or expired VIP codes.
+- Web-based management system with a responsive user interface using Bootstrap 5.
+- Interactive frontend built with Vue 3 for dynamic data handling and user experience.
+- Role-based access control with distinct roles like admin and owner for granular management.
+- Enhanced VIP code generation and validation through the web interface.
+- Extended functionalities for VIP test, code management, and status updates.
+- Automated checking and updating of non-existent, used, or expired VIP codes with web-based notifications.
+- Seamless integration with SourceBans for streamlined VIP management in-game.
+- Improved security and data handling in the backend using PHP.
 
 ## CVAR/Command List
-- `sm_vip_code` - Allows a user to activate their VIP code and if a user uses the code received it grants a user VIP status for a limited time.
-- `sm_viptest` - Gives the user a randomly generated code.
-- `sm_myvipcode` - Lets a user see their VIP code.
-- `sm_vipstatus` - Allows a user to check the status of their VIP trial.
+- `sm_vip_code` - Activate VIP code and grant limited VIP status.
+- `sm_viptest` - Generate a random VIP code for testing.
+- `sm_myvipcode` - View your VIP code.
+- `sm_vipstatus` - Check the status of your VIP trial.
 
 ## Changelog
 **09-11-2023 (v1.0)**
 - Initial release with VIP code management.
 - Added checks.
-- Fixed some bugs when receiving and activating the vip code.
+- Fixed some bugs when receiving and activating the VIP code.
+
+**30-11-2023 (v2.0)**
+- Introduced a web-based management system for VIP users.
+- Implemented a responsive user interface using Bootstrap 5.
+- Developed an interactive frontend with Vue 3.
+- Added role-based access control for administrators and owners.
+- Enhanced security features and data handling in the PHP backend.
+- Integrated web interface with SourceBans for streamlined in-game management.
+- Added new web-based functionalities for VIP management.
 
 ## Installation Instructions
-1. Configure a SourceBans group with some flags you want to give to VIP users.
+1. Configure a SourceBans group with flags for VIP users.
 2. Create the table sb_vip_system with columns by running the [SQL File](https://github.com/DAYBR3AK1999/Automated-VIP-System/blob/main/vip_system.sql).
-3. Download the plugin [.smx](vip.smx) or compile the [.sp](https://github.com/DAYBR3AK1999/Automated-VIP-System/blob/main/vip.sp) file while you configured the plugin by editing the `.sp or .sql file` to your own liking.
+3. Download and configure the plugin and web interface files.
 4. Place the .smx file in your server's `addons/sourcemod/plugins` directory.
-5. Restart the server.
+5. Deploy the web interface on your web server.
+6. Restart the server and configure the web interface.
 
 ## Dependencies
 - SourceMod
 - SourceBans
+- PHP, MySQL/MariaDB, Apache/Nginx (for the web interface)
+- Bootstrap 5, Vue 3 (for the web interface)
+
+## Contributors
+- [xkonsole - AlliedMods Profile](https://forums.alliedmods.net/member.php?u=284451) | [GitHub](https://github.com/strangelove7701)
+- [Asheroto - AlliedMods Profile](https://forums.alliedmods.net/member.php?u=296790) | [GitHub](https://github.com/asheroto)
 
 ## Plans
 - Implementation of in-game functions using the administration menu.
 - Multilingual support.
 - Integrate it into a VIP menu system for users.
+- Further enhancements to the web interface for easier management.
 
 ## About this plugin
-This SourceMod plugin provides a series of commands and automated tasks to manage VIP players on a server. 
-It interacts with the SourceBans database to update and verify VIP status, codes and ensure that VIP privileges are granted accurately and efficiently.
+This SourceMod plugin, along with its web interface, provides comprehensive tools to manage VIP players on a server. It interacts with the SourceBans database to ensure accurate and efficient VIP privileges management.
 
 ## Useful for :
-Servers who want to give VIP users privileges.
+Servers looking to provide VIP privileges in a controlled and manageable manner. Ideal for Zombie Servers or similar game types.
 
+## Preview
+![Automated VIP System](https://sedirector.adrenaline-gaming.net/images/automatedvipsystem.png)
+
+## Full release
+[On my GitHub profile](https://github.com/DAYBR3AK1999/Automated-VIP-System)
+
+## Web Management System Preview
+[Here (Login = DAYBR3AK1999/Test123 & Thieu/Test123](https://viptest.adrenaline-gaming.net/)

@@ -75,7 +75,6 @@ Servers looking to provide VIP privileges in a controlled and manageable manner.
 ## Full release
 [On my GitHub profile](https://github.com/DAYBR3AK1999/Automated-VIP-System)
 
-## Web Management System Preview
-- [Pictures will be added]
-- [Login with owner rights: DAYBR3AK1999 & Password: Test123]
-- [Login with admin rights: Thieu & Password: Test123]
+## Web Management System Login
+- Login with owner rights: DAYBR3AK1999 & Password: Test123
+- Login with admin rights: Thieu & Password: Test123

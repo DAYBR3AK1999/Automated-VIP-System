@@ -1,0 +1,12 @@
+.hidden { 
+    display: none; 
+}
+.status-on { 
+    color: green; 
+}
+.status-off { 
+    color: red; 
+}
+.status-restarting { 
+    color: orange; 
+}

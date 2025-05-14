@@ -1,0 +1,342 @@
+"Phrases"
+{
+    "VIP_USAGE"
+    {
+        "en"  "Usage: sm_vip_code <YourCodeHere>"
+        "fr"  "Utilisation : sm_vip_code <VotreCodeIci>"
+    }
+    "VIP_SPAM"
+    {
+        "en" "{red}[VIP] Please do not spam commands."
+        "fr" "{red}[VIP] Ne spammez pas cette commande."
+    }
+    "VIP_CODE_ALPHANUM"
+    {
+        "en"  "VIP code only contains letters and numbers (a-z, A-Z, 0-9)."
+        "fr"  "Le code VIP ne doit contenir que des lettres et des chiffres (a-z, A-Z, 0-9)."
+    }
+    "VIP_ALREADY_CLAIMED"
+    {
+        "en"  "This VIP code has already been claimed."
+        "fr"  "Ce code VIP a déjà été réclamé."
+    }
+    "VIP_NOT_YOURS"
+    {
+        "en"  "You are not allowed to claim this VIP code."
+        "fr"  "Vous ne pouvez pas réclamer ce code VIP."
+    }
+	"VIP_INCORRECT"
+    {
+        "en" "{red}[VIP] Incorrect VIP code."
+        "fr" "{red}[VIP] Code VIP incorrect."
+    }
+    "VIP_PROCESS_ERROR"
+    {
+        "en"  "An error occurred while processing your VIP code."
+        "fr"  "Une erreur est survenue lors du traitement de votre code VIP."
+    }
+	"VIP_ACTIVATED"
+    {
+        "en" "{green}[VIP]{default} Your VIP code has been {lightgreen}activated{default}!"
+        "fr" "{green}[VIP]{default} Votre code VIP a bien été {lightgreen}activé{default} !"
+    }
+    "VIP_TRIAL_RECEIVED"
+    {
+        "en"  "VIP Trial code already received."
+        "fr"  "Vous avez déjà reçu un code VIP d'essai."
+    }
+    "VIP_VIPTEST_USED"
+    {
+        "en"  "You have already used the sm_viptest command (stored in database)."
+        "fr"  "Vous avez déjà utilisé la commande sm_viptest (enregistrée en base de données)."
+    }
+    "VIP_TRIAL_ACTIVE"
+    {
+        "en"  "Your VIP Trial is active."
+        "fr"  "Votre VIP d'essai est actif."
+    }
+    "VIP_TRIAL_EXPIRED"
+    {
+        "en"  "Your VIP Trial has expired."
+        "fr"  "Votre VIP d'essai a expiré."
+    }
+    "VIP_VIPTEST_ALREADY_CLAIMED"
+    {
+        "en"  "You have already claimed a VIP trial code: %s. Activate it by writing sm_vip_code %s"
+        "fr"  "Vous avez déjà réclamé un code VIP d'essai : %s. Activez-le en tapant sm_vip_code %s"
+    }
+    "VIP_NEW_CODE"
+    {
+        "en" "{green}[VIP] Your new VIP code: {lightgreen}%s"
+        "fr" "{green}[VIP] Votre nouveau code VIP : {lightgreen}%s"
+    }
+    "VIP_YOUR_CODE"
+    {
+        "en"  "Your VIP code: %s"
+        "fr"  "Votre code VIP : %s"
+    }
+    "VIP_VIPTEST_NOT_USED"
+    {
+        "en"  "You haven't used the !viptest command yet. Use !viptest to receive a VIP code."
+        "fr"  "Vous n'avez pas encore utilisé la commande !viptest. Utilisez !viptest pour recevoir un code VIP."
+    }
+    "VIP_VIPTEST_NOT_CLAIMED"
+    {
+        "en"  "You didn't claim your VIP Trial yet. Claim it by writing !viptest"
+        "fr"  "Vous n'avez pas encore réclamé votre VIP d'essai. Réclamez-le en tapant !viptest."
+    }
+    "VIP_TRIAL_EXPIRES"
+    {
+        "en"  "Your VIP Trial expires on %s."
+        "fr"  "Votre VIP d'essai expire le %s."
+    }
+    "VIP_TRIAL_NOT_ACTIVATED"
+    {
+        "en"  "You have not activated your VIP Trial yet."
+        "fr"  "Vous n'avez pas encore activé votre VIP d'essai."
+    }
+    "VIP_TRIAL_DISABLED"
+    {
+        "en"  "The VIP trial feature is disabled."
+        "fr"  "Le mode VIP d'essai est désactivé."
+    }
+	"VIP_MENU_TITLE"
+	{
+		"en" "VIP Menu"
+		"fr" "Menu VIP"
+	}
+
+	"VIP_MENU_CLAIM"
+	{
+		"en" "Claim VIP Trial"
+		"fr" "Activer le VIP d'essai"
+	}
+
+	"VIP_MENU_STATUS"
+	{
+		"en" "VIP Status"
+		"fr" "Statut VIP"
+	}
+
+	"VIP_MENU_CODE"
+	{
+		"en" "Show My VIP Code"
+		"fr" "Voir mon code VIP"
+	}
+
+	"VIP_MENU_HELP"
+	{
+		"en" "What is VIP?"
+		"fr" "Qu'est-ce que le VIP ?"
+	}
+
+	"VIP_MENU_HELP_INFO"
+	{
+		"en" "VIP gives you extra perks and access. Visit our Discord for details!"
+		"fr" "Le VIP vous donne des avantages spéciaux. Rejoignez notre Discord pour plus d'infos !"
+	}
+
+	"VIP_MENU_ADMIN"
+	{
+		"en" "Web Admin"
+		"fr" "Web Admin"
+	}
+
+	"VIP_MENU_TOGGLE_TRIAL"
+	{
+		"en" "Toggle VIP Trial Mode"
+		"fr" "Activer/Désactiver le mode d'essai VIP"
+	}
+	    "VIP_STATUS_NOT_CLAIMED"
+    {
+        "en" "You have not claimed a VIP Trial yet. Use !viptest"
+        "fr" "Vous n'avez pas encore réclamé de VIP. Utilisez !viptest"
+    }
+
+    "VIP_STATUS_CLAIMED"
+    {
+        "en" "Claimed: %s"
+        "fr" "Réclamé : %s"
+    }
+
+    "VIP_STATUS_EXPIRE"
+    {
+        "en" "Active until: %s"
+        "fr" "Actif jusqu'au : %s"
+    }
+
+    "VIP_STATUS_NOT_ACTIVATED"
+    {
+        "en" "Not activated yet"
+        "fr" "Pas encore activé"
+    }
+
+    "VIP_STATUS_CODE"
+    {
+        "en" "Your Code: %s"
+        "fr" "Votre code : %s"
+    }
+	
+    "VIP_ADMIN_TITLE"
+    {
+        "en" "VIP Admin Panel"
+        "fr" "Panneau Admin VIP"
+    }
+    "VIP_ADMIN_VIEW_VIPS"
+    {
+        "en" "View Active VIPs"
+        "fr" "Voir les VIP actifs"
+    }
+    "VIP_ADMIN_CHECK_EXPIRE"
+    {
+        "en" "Run Expiration Check"
+        "fr" "Vérifier les expirations"
+    }
+    "VIP_ADMIN_TOGGLE_TRIAL"
+    {
+        "en" "Toggle VIP Trial Mode"
+        "fr" "Activer/Désactiver VIP Essai"
+    }
+    "VIP_ADMIN_EXECUTED"
+    {
+        "en" "Expiration check executed."
+        "fr" "Vérification des expirations effectuée."
+    }
+    "VIP_ADMIN_TRIAL_TOGGLED"
+    {
+        "en" "VIP Trial mode is now %s."
+        "fr" "Le mode VIP d'essai est maintenant %s."
+    }
+    "VIP_ADMIN_NO_ACCESS"
+    {
+        "en" "You do not have permission to open the Admin panel."
+        "fr" "Vous n'avez pas la permission d'accéder au panneau Admin."
+    }
+    "VIP_LIST_TITLE"
+    {
+        "en" "Active VIPs"
+        "fr" "VIP actifs"
+    }
+    "VIP_LIST_EMPTY"
+    {
+        "en" "No active VIPs found."
+        "fr" "Aucun VIP actif trouvé."
+    }
+    "VIP_LIST_SQL_ERROR"
+    {
+        "en" "Could not fetch VIPs: %s"
+        "fr" "Impossible de récupérer les VIPs : %s"
+    }
+	"VIP_MENU_DONATE"
+	{
+		"en" "Support Us / Donate"
+		"fr" "Nous soutenir / Faire un don"
+	}
+	"VIP_MENU_CLOSE"
+    {
+        "en" "Close"
+        "fr" "Fermer"
+    }
+	"VIP_ADMIN_NO_ACCESS"
+	{
+		"en"        "{green}[VIP]{default} You do not have access to the admin panel."
+		"fr"        "{green}[VIP]{default} Vous n'avez pas accès au panneau d'administration."
+	}
+	"VIP_ADMIN_NO_URL"
+	{
+		"en"        "{green}[VIP]{default} Admin panel URL is not set."
+		"fr"        "{green}[VIP]{default} L'URL du panneau d'administration n'est pas définie."
+	}
+	"VIP_ADMIN_NO_PERMISSION"
+	{
+		"en"        "{green}[VIP]{default} You don't have permission to toggle this setting."
+		"fr"        "{green}[VIP]{default} Vous n'avez pas la permission de modifier ce réglage."
+	}
+	"VIP_MENU_BACK"
+	{
+		"en" "< Back"
+		"fr" "< Retour"
+	}
+	"VIP_MENU_BENEFITS"
+	{
+		"en" "My VIP Benefits"
+		"fr" "Mes Avantages VIP"
+	}
+	"VIP_EDIT_VIP"
+	{
+		"en" "Edit VIP"
+		"fr" "Modifier le VIP"
+	}
+	"VIP_DETAILS_TITLE"
+	{
+		"en" "VIP Details: %s"
+		"fr" "Détails du VIP : %s"
+	}
+		"VIP_MOTD_DONATE_TITLE"
+	{
+		"en" "Support Us"
+		"fr" "Nous soutenir"
+	}
+	"VIP_MOTD_ADMIN_TITLE"
+	{
+		"en" "VIP Admin Panel"
+		"fr" "Panneau d'administration VIP"
+	}
+	"VIP_MOTD_EDIT_TITLE"
+	{
+		"en" "Edit VIP"
+		"fr" "Modifier le VIP"
+	}
+	"VIP_BENEFITS_TITLE"
+	{
+		"en" "Your VIP Benefits"
+		"fr" "Vos avantages VIP"
+	}
+	"VIP_DETAILS_CODE"
+	{
+		"en" "Code: %s"
+		"fr" "Code : %s"
+	}
+	"VIP_DETAILS_EXPIRE"
+	{
+		"en" "Expires: %s"
+		"fr" "Expire : %s"
+	}
+	"VIP_DETAILS_USED"
+	{
+		"en" "Used: %s"
+		"fr" "Utilisé : %s"
+	}
+	"VIP_DETAILS_GROUP"
+	{
+		"en" "Group: %s"
+		"fr" "Groupe : %s"
+	}
+	"YES"
+	{
+		"en" "Yes"
+		"fr" "Oui"
+	}
+	"NO"
+	{
+		"en" "No"
+		"fr" "Non"
+	}
+	"NONE"
+	{
+		"en" "None"
+		"fr" "Aucun"
+	}
+"VIP_ACTIVATE_NOW"
+{
+    "en" "Activate My VIP Code"
+    "fr" "Activer mon code VIP"
+}
+"VIP_ACTIVATE_CONFIRM_TITLE"
+{
+    "en" "Are you sure you want to activate your VIP code now?"
+    "fr" "Êtes-vous sûr de vouloir activer votre code VIP maintenant ?"
+}
+
+
+}

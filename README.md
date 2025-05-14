@@ -83,7 +83,7 @@ sm_vip_adminpanel_url "https://yourdomain.com/panel"
 sm_vip_donate_url "https://yourdomain.com/donate"
 sm_vip_enable_trial "1"
 sm_vip_show_menu_on_connect "0"
-
+```
 ## 📜 Changelog
 
 ### 🔷 v3.0 – 14 May 2025

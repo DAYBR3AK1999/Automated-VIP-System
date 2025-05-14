@@ -82,3 +82,62 @@ sm_vip_adminpanel_url "https://yourdomain.com/panel"
 sm_vip_donate_url "https://yourdomain.com/donate"
 sm_vip_enable_trial "1"
 sm_vip_show_menu_on_connect "0"
+
+📜 Changelog
+v3.0 – 14 May 2025
+Refactored plugin core for security and optimization
+
+Full dynamic menu system (!vipmenu, !vipstatus, etc.)
+
+Added VIP benefits display menu (auto from SQL)
+
+Auto expiration system with CheckExpiredVIPs()
+
+Multilingual support (EN & FR)
+
+Configurable trial toggle (via ConVar or admin menu)
+
+MOTD panel integration (Donate + Admin Panel)
+
+SQL: trial status, used codes, VIP group, added_by tracking
+
+Fully structured file layout: sql/, web/, cstrike/
+
+v2.0 – 30 Nov 2023
+Introduced the first version of the web admin system (Vue + Bootstrap)
+
+Added role-based access and code validation/editing
+
+v1.0 – 09 Nov 2023
+Initial release: VIP code management & in-game activation
+
+Base plugin with SourceBans support
+
+⚙️ Dependencies
+SourceMod (v1.10 or higher)
+
+SourceBans (1.x or ++)
+
+PHP 7.4+ with MySQLi
+
+Apache / Nginx web server
+
+🙌 Contributors
+DAYBR3AK1999 – Project lead & dev
+
+Inspired by: xkonsole, Asheroto
+
+📦 GitHub & Downloads
+🌐 Repo: https://github.com/DAYBR3AK1999/Automated-VIP-System
+
+📥 Download ZIP: Latest Release v3.0
+
+🎯 Ideal Use Cases
+Zombie, Surf, Jailbreak, Combat, or Fun servers with active VIP communities
+
+Need full control over VIP access, trials, duration, and perks
+
+Want web control panel + in-game integration
+
+📸 Screenshots & Preview
+Coming soon – or suggest your own and I’ll generate preview banners for you!

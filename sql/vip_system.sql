@@ -43,8 +43,8 @@ CREATE TABLE `users` (
 
 -- Insert demo users with password: 123456
 INSERT INTO `users` (`username`, `password`, `role`) VALUES
-  ('owner', '$2y$10$z5nnK0qVXOGrVa7HRSCmE.2Uz1Orvsjb5FR3dUqtABVRIyKv04fxO', 'owner'),
-  ('admin', '$2y$10$z5nnK0qVXOGrVa7HRSCmE.2Uz1Orvsjb5FR3dUqtABVRIyKv04fxO', 'admin');
+  ('owner', '$2y$10$DJlEHvIvv1ILIi9OYi.D1.BUvXvWYN06IW/iURAfuBx/pfs0Hsjrm', 'owner'),
+  ('admin', '$2y$10$DJlEHvIvv1ILIi9OYi.D1.BUvXvWYN06IW/iURAfuBx/pfs0Hsjrm', 'admin');
 
 -- -----------------------------------
 -- Create VIP groups table

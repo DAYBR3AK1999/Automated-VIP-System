@@ -71,8 +71,8 @@ A dynamic and automated VIP management system for games using **SourceMod** and 
 
 | Role  | Username | Password |
 |-------|----------|----------|
-| Owner | `owner`  | `123456` |
-| Admin | `admin`  | `123456` |
+| Owner | `owner`  | `Test123` |
+| Admin | `admin`  | `Test123` |
 
 ---
 
